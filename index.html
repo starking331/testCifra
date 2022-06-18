@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@600;700;800&family=Roboto:wght@400;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carfly</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <ul class="menu-list">
+                <li>Услуги</li>
+                <li>О парковке</li>
+                <li>Где мы?</li>
+                <li>Камеры</li>
+            </ul>
+            <div class="contacts">
+                <img src="/images/whatsApp_icon.svg" alt="WhatsApp icon">
+                <span class="number">+7 (921) 000-00-00</span>
+                <span class="number">8 (800) 555-35-35</span>
+            </div>
+        </nav>
+        <div class="border"></div>
+    </header>
+    <div class="order-form">
+        <div class="about-title">
+            <span>Парковка в Пулково 
+                <br>с трансфером <br>в аэропорт
+            </span>
+            <img src="/images/mens.svg" alt="">
+        </div>
+        <div class="about-price">
+            <div class="item">
+                <span class="time">
+                    1 - 2 дня
+                </span>
+                <br>
+                <span class="price">
+                    350 рублей
+                </span>
+            </div>
+
+            <div class="item">
+                <span class="time">
+                    3 - 7 дней
+                </span>
+                <br>
+                <span class="price">
+                    250 рублей
+                </span>
+            </div>
+
+            <div class="item">
+                <span class="time">
+                    7 - 14 дней
+                </span>
+                <br>
+                <span class="price">
+                    200 рублей
+                </span>
+            </div>
+        </div>
+        <div class="booking-form">
+            <div class="date-in">
+                <span class="date-time">
+                    Дата и время въезда (вылет - 3 часа)
+                </span>
+                <input id="datetime" type="datetime-local">
+            </div>
+
+            <div class="date-out">
+                <span class="date-time">
+                    Дата и время выезда (прилет + 1 час)
+                </span>
+                <input id="datetime" type="datetime-local">
+            </div>
+
+            <div class="button-search">
+                <button>Найти место</button>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <h2>Услуги</h2>
+        <div class="services-links">
+            <form class="boxed">
+                <input type="radio" id="free" name="servic" value="Android Development" checked onclick="setContent('free')">
+                <label for="free">Бесплатный трансфер</label>
+
+                <input type="radio" id="comfort" name="servic" value="Android Development" onclick="setContent('comfort')">
+                <label for="comfort">Комфортное оформление</label>
+
+                <input type="radio" id="extra" name="servic" value="Android Development" onclick="setContent('extra')">
+                <label for="extra">Дополнительно</label>
+            </form>
+            <div class="description">
+                <div id="image-descr"><img id="image" src="/images/free car.svg" alt=""></div>
+                <ul id="services-descr">
+                    <li id="first">1</li>
+                    <li id="second">2</li>
+                    <li id="third">3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>О парковке</h2>
+        <div class="cards-gallery">
+            <div class="first-card">
+                <div class="gap"></div>
+                <span class="card-title">
+                    500
+                </span>
+                <br>
+                <span class="card-description">
+                    машиномест
+                </span>
+                <br>
+                <img src="/images/car.svg" alt="">
+            </div>
+            <div class="card">
+                <div class="gap"></div>
+                <span class="card-title">
+                    Вежливый
+                </span>
+                <br>
+                <span class="card-description">
+                    персонал
+                </span>
+                <br>
+                <img src="/images/people.svg" alt="">
+            </div>
+            <div class="card">
+                <div class="gap"></div>
+                <span class="card-title">
+                    Ответсвенность
+                </span>
+                <br>
+                <span class="card-description">
+                    застрахована в страховой компании
+                </span>
+                <br>
+                <img src="/images/security.svg" alt="">
+            </div>
+            <div class="first-card">
+                <div class="gap"></div>
+                <span class="card-title">
+                    Безопасность
+                </span>
+                <br>
+                <span class="card-description">
+                    на объекте обеспечивается Федеральной службойвойск национальной гвардии России
+                </span>
+                <br>
+                <img src="/images/sheild.svg" alt="">
+            </div>
+            <div class="card">
+                <div class="gap"></div>
+                <span class="card-title">
+                    Более 20
+                </span>
+                <br>
+                <span class="card-description">
+                    камер и периметральная охранная сигнализация
+                </span>
+                <br>
+                <img src="/images/camera.svg" alt="">
+            </div>
+
+            <div class="last-card">
+                <div class="booking-title">Забронируйте<br> место на парковке</div>
+                <button class="bookin">Забронировать</button>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="first-line">
+                <a href=""><img src="/images/online.svg" alt="" class="gallery-titleImg"></a>
+                <div class="four-photo">
+                    <img src="/images/cars1.png" alt="">
+                    <img src="/images/cars2.png" alt="">
+                    <img class="second-photos" src="/images/cars3.png" alt="">
+                    <img class="second-photos" src="/images/cars4.png" alt="">
+                </div>
+            </div>
+            <div class="photos">
+                <img src="/images/cars5.png" alt="">
+                <img src="/images/cars6.png" alt="">
+                <img src="/images/cars7.png" alt="">
+                <img src="/images/cars8.png" alt="">
+            </div>
+        </div>
+        <div class="more-photo">
+            <button>Ещё фото <img src="/images/arrow.svg" alt=""></button>
+        </div>
+    </div>
+
+    <div class="place">
+        <div class="place-left">
+            <h2>Где мы находимся</h2>
+            <p>Aдрес</p>
+            <span>Пулковское ш., д. 41, лит. ЗИ, Санкт-Петербург</span>
+
+            <p>Координаты</p>
+            <span>55.58804713; 37.21705019</span>
+            <span class="telephone"><img src="/images/black-whatsApp.svg" alt="">+7 (921) 000-00-00</span>
+            <span class="telephone"><img src="/images/tel.png" alt=""> 8 (800) 555-35-35</span>
+            <button>Найти в навигаторе</button>
+        </div>
+        <div class="place-right">
+            <img src="/images/map.png" alt="map" width="1000" height="631">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="phones">
+                <div class="phones-gap"></div>
+                <span><img src="/images/whiteWhatsApp.svg" alt="">+7 (921) 000-00-00</span>
+                <span class="sec">Тел. 8 (800) 555-35-35</span>
+            </div>
+            <div class="line"></div>
+            <div class="info">
+                <div class="name">© Carfly 2020</div>
+                <div class="politic">Политика конфидициальности</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function setContent(btn){
+            var image = document.getElementById('image');
+            var firstList = document.getElementById('first');
+            var secondList = document.getElementById('second');
+            var thirdList = document.getElementById('third');
+            var source = '';
+            var first = '';
+            var second = '';
+            var third = '';
+            switch (btn) {
+                case 'free':
+                    source = '/images/free_car.svg';
+                    first = 'Следите онлайн за местонахождением автобуса!';
+                    second = 'Вежливый водитель, 5 минут в пути, запись происходящего в салоне для решения конфликтных ситуаций';
+                    third = 'При необходимости устанавливается детское кресло в автомобиль трансфера';
+                    break;
+
+                case 'comfort':
+                    source = '/images/comfort.svg'
+                    first = 'Забронируйте и оплатите место заране и сэкономьте время на оформление на месте!';
+                    second = 'Комфортный офис с туалетом, питьевой водой и Wi-Fi';
+                    third = 'Заключаем договор ответственного хранения';
+                    image.style.marginLeft = '165px';
+                    break;
+                
+                case 'extra':
+                    source = '/images/mens_descr.svg';
+                    first = 'Упаковка багажа. Один чемодан - бесплатно! Каждый последующий чемодан -200 рублей';
+                    second = 'Спустило колесо? Не беда - поможем накачать!';
+                    third = 'Сел аккумулятор? Не беда - поможем с запуском автомобиля';
+                    image.style.marginLeft = '333px';
+                    break;
+            }
+            image.src = source;
+            firstList.innerHTML = first;
+            secondList.innerHTML = second;
+            thirdList.innerHTML = third;
+        }
+        setContent('free');
+    </script>
+</body>
+</html>

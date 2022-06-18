@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+.menu{
+    display: flex;
+    margin-top: 57px;
+    margin-bottom: 57px;
+    font-size: 24px;
+}
+.menu-list{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-left: 453px;
+    margin-right: 202px;
+    color: #4D5465;
+}
+.number{
+    margin-right: 30px;
+}
+.contacts img{
+    vertical-align: middle;
+}
+.border{
+    width: 100%;
+    height: 2px;
+    background-color: #579D45;
+    opacity: 0.2;
+}
+
+.order-form{
+    width: 100%;
+    background-image: url("/images/airport-background.svg");
+    background-repeat: no-repeat;
+}
+.about-title{
+    margin-left: 250px;
+    margin-top: 73px;
+}
+.about-title span{
+    font-weight: 800;
+    font-size: 4vw;
+    line-height: 74px;
+}
+.order-form img{
+    float: right;
+    margin-right: 279px;
+}
+@media screen and (max-width: 1669px)
+{
+    .order-form img{
+        visibility: hidden;
+    }
+    .booking-form{
+        flex-direction: column;
+    }
+    .menu{
+        flex-wrap: wrap;
+    }
+    .contacts{
+        margin: 0 auto;
+    }
+    .menu-list{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 390px)
+{
+    .about-title{
+        margin-left: 50px;
+        margin-top: 73px;
+    }
+    .about-price{
+        margin-left: 100px;
+    }
+}
+.about-price{
+    margin-left: 250px;
+    margin-top: 250px;
+    display: flex;
+    gap: 71px;
+    padding-top: 25px;
+    padding-bottom: 22px;
+}
+.about-price div{
+    flex: 0 0 auto;
+}
+.item{
+}
+.time{
+    color:#579D45;
+}
+.price{
+    font-weight: 800;
+    margin-top: 8px;
+}
+.booking-form{
+    margin-left: 250px;
+    margin-top: 95px;
+    display: flex;
+    gap: 40px;
+}
+.date-in{
+    display: flex;
+    flex-direction: column;
+}
+.date-time{
+    color: #4D5465;
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+#datetime{
+    width: 480px;
+    height: 60px;
+    border: 1px solid #B5C0D9;
+    border-radius: 4px;
+}
+.date-out{
+    display: flex;
+    flex-direction: column;
+}
+.button-search button{
+    background-color: #579D45;
+    color: white;
+    width: 359px;
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.services{
+    margin-top: 100px;
+}
+
+h2{
+    font-size: 4vw;
+    font-weight: 800;
+    text-align: center;
+}
+.boxed{
+    text-align: center;
+}
+.boxed label {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 32px;
+    color: #4D5465;
+    margin-right: 40px;
+}
+.boxed input[type="radio"] {
+    display: none;
+}
+  
+.boxed input[type="radio"]:checked + label {
+    color: #579D45;
+    border-bottom: 4px solid #579D45;
+}
+.description{
+    display: flex;
+    margin-top: 70px;
+}
+.about-price{
+    background-image: url('/images/mens_descr.svg');
+}
+#image {
+    margin-left: 260px;
+    margin-right: 76px;
+}
+#services-descr {
+    list-style-image: url('/images/marker.svg');
+    color: #4D5465;
+    font-weight: 600;
+    font-size: 24px;
+}
+.about{
+    margin-top: 100px;
+}
+.cards-gallery{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 52px;
+    flex-wrap: wrap;
+}
+.first-card{
+    margin-left: 260px;
+    width: 440px;
+    height: 256px;
+}
+.card{
+    width: 440px;
+    height: 256px;
+    margin-left: 40px;
+}
+.card-title{
+    font-weight: 800;
+    color: #579D45;
+    font-size: 32px;
+}
+.card-description{
+    font-weight: 600;
+    font-size: 24px;
+    color: #4D5465;
+    margin-top: 8px;
+}
+.card img, .first-card img{
+    margin-left: 326px;
+    margin-top: 49px;
+}
+.gap{
+    height: 50px;
+    width: 100%;
+}
+.last-card{
+    width: 440px;
+    height: 256px;
+    background-color: #579D45;
+    border-radius: 6px;
+}
+.booking-title{
+    font-weight: 800;
+    font-size: 32px;
+    color: white;
+    margin-left: 50px;
+    margin-top: 64px;
+    margin-bottom: 24px;
+}
+.bookin{
+    height: 60px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 4px;
+    color: #579D45;
+    padding: 20px 60px;
+    cursor: pointer;
+}
+.gallery{
+    margin-top: 60px;
+}
+.gallery-titleImg{
+    margin-left: 260px;
+    margin-right: 40px;
+}
+.first-line{
+    display: flex;
+}
+.four-photo img{
+    margin-right: 35px;
+    border-radius: 6px;
+}
+.second-photos{
+    margin-top: 30px;
+}
+.photos{
+    margin-left: 260px;
+    margin-top: 30px;
+}
+.photos img{
+    margin-right: 35px;
+    border-radius: 6px;
+}
+.more-photo{
+    position: absolute;
+    left: 50%;
+}
+.more-photo button{
+    font-weight: 600;
+    font-style: 20px;
+    color: #579D45;
+    background-color: white;
+    border: 1px solid #579D45;
+    cursor: pointer;
+    margin-top: 52px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 119px;
+}
+.place{
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 115px;
+}
+.place-left{
+    margin-left: 260px;
+}
+.place-left h2{
+    text-align: left;
+    margin-bottom: 32px;
+}
+.place-left p{
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 12px;
+    margin-top: 40px;
+}
+.place-left span{
+    font-weight: 600;
+    color: #4D5465;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 40px;
+}
+.telephone{
+    font-weight: 600;
+    color: #4D5465;
+    font-size: 24px;
+    display: block;
+}
+.place-left button{
+    font-weight: 600;
+    font-style: 20px;
+    color: #579D45;
+    background-color: white;
+    border: 1px solid #579D45;
+    cursor: pointer;
+    margin-top: 52px;
+    padding: 20px 40px;
+    border-radius: 4px;
+    margin-bottom: 119px;
+}
+footer{
+    width: 100%;
+    background-color: #579D45;
+    height: 232px;
+    color: white;
+}
+.wrapper{
+    width: 1400px;
+    margin-left: 260px;
+}
+.phones{
+    text-align: right;
+    margin-bottom: 72px;
+}
+.phones span{
+    margin-top: 68px;
+}
+.sec{
+    margin-left: 42px;
+}
+.line{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+.info{
+    font-weight: 600;
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+.name, .politic{
+    font-size: 16px;
+}
+.phones-gap{
+    height: 68px;
+}
